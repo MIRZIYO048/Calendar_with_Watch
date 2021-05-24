@@ -1,0 +1,39 @@
+@media(max-width: 1320px) and (min-width: 722px){
+    body{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .tabsPanel{
+        margin: 0 auto 100px;
+    }
+}
+@media(max-width: 721px) and (min-width: 700px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .tabsPanel{
+        margin: 0 auto 100px;
+    }
+    .clane{
+        padding-left: 30px;
+        font-size: 50%;
+        width: 1000px;
+    }
+}
+@media(max-width: 699px){
+    body{
+        display: flex;
+        flex-direction: column;
+        margin-left: 185px;
+    }
+    .tabsPanel{
+        margin: 0 auto 100px;
+    }
+    .clane{
+        padding-left: 30px;
+        font-size: 50%;
+        width: 1000px;
+    }
+}

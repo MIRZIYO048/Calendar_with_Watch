@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/media.css">
+</head>
+
+<body>
+    <div class="tabsPanel">
+        <!-- Tablar -->
+        <ul class="tabsLinks">
+            <li class="tabsItem active"><a href="#" class="tabsLink tab1">Часы</a></li>
+            <li class="tabsItem">
+                <a href="#stopwatch" class="tabsLink tab2">Секундомер
+                    <!-- Sekundomer ishlayotganini bildirib turadi
+                    O`ziga ishlashini bildirayotgan active classini oladi
+                    active - sekundomer ishlayapti
+                    active_clear - Sekundomer toxtatilgan ammo malumot ochirilmagan
+                    -->
+                    <span class="tabsLink__span"></span>
+                </a>
+            </li>
+            <!-- <li class=""><a class="tabsLink tab3" href="/Calendar/index.html">Календар</a></li> -->
+        </ul>
+        <!-- Tablar -->
+        <div class="tabsContent">
+            <!-- Ko`rsatkichli soat -->
+            <div class="clock tabsContentItem active">
+                <div class="arrowClock">
+                    <!-- Soat -->
+                    <div class="arrowClockNumber">
+                        <div class="arrowClockNumber__num arrowClockNumber__num_12">12</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_1"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_2"></div>
+                        <div class="arrowClockNumber__num arrowClockNumber__num_3">3</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_4"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_5"></div>
+                        <div class="arrowClockNumber__num arrowClockNumber__num_6">6</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_7"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_8"></div>
+                        <div class="arrowClockNumber__num arrowClockNumber__num_9">9</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_10"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_11"></div>
+                    </div>
+
+                    <!-- Ko`rsatkichlar  -->
+
+                    <div class="s"></div> <!-- soniya -->
+                    <div class="m"></div> <!-- daqiqa -->
+                    <div class="h"></div> <!-- soat -->
+                </div>
+                <div class="munds">
+                <div class="numberClock">
+                    <!-- Vaqtni son ko`rinishida chiqarish -->
+                    <div class="hours">00</div>
+                    <div class="minutes">00</div>
+                </div>
+                <div class="sss">
+                </div>
+                <div class="seconds">00</div>
+                </div>
+            </div>
+            <!-- Uyga sekundomer -->
+            <!-- 
+
+            Vazifa: Rekursiya yordamida Date()siz ishlaydigan sekundomer yasash    
+
+             -->
+            <div id="stopwatch" class="stopwatch tabsContentItem ">
+                <div class="stopwatch__clock">
+
+                    <div class="stopwatch__clock-description">
+                        <!-- Soat -->
+                        <div class="stopwatch__hours">0</div>
+                        Час.
+                    </div>
+                    <div class="stopwatch__clock-description">
+                        <!-- Daqiqa -->
+                        <div class="stopwatch__minutes">0</div>
+                        Мин.
+                    </div>
+                    <div class="stopwatch__clock-description">
+                        <!-- Soniya -->
+                        <div class="stopwatch__seconds">0</div>
+                        Сек.
+                    </div><div class="stopwatch__clock-description">
+                        <!-- Soniya -->
+                        <div class="stopwatch__dseconds">0</div>
+                        Д.Сек.
+                    </div>
+                </div>
+                <!-- Sekundomerni ishlatadigan tugma -->
+                <div class="buttons">
+                <button class="stopwatch__bt"></button>
+                <button class="stopwatch__btn">start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Calendars-->
+
+    <div class="container calendar clane">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"><</i>
+            <div class="date">
+              <h1></h1>
+              <p></p>
+            </div>
+            <i class="fas fa-angle-right next">></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days"></div>
+        </div>
+      </div>
+
+    <script src="/js.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
